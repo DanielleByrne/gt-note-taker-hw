@@ -1,5 +1,7 @@
 # Note Taker Homework
+
 [Link to GitHub] (https://github.com/DanielleByrne/gt-note-taker-hw)
+
 [Link to Heroku] (https://gt-note-taker-homework.herokuapp.com/)
 
 
@@ -17,7 +19,7 @@ Clone the repository from GitHub, run npm install, and run the server.js applica
 
 ## Usage 
 
-This project is comprised of an HTML, CSS, and JavaScript file that make a random password generator based on user input
+This project is comprised of an HTML, CSS, and JavaScript files that make note taker app 
 ![SavedNote](savedNote.png)
 
 ![DeletedNote](deletedNote.png)
@@ -26,7 +28,7 @@ This project is comprised of an HTML, CSS, and JavaScript file that make a rando
 
 ## Credits
 
-This was a project I completed as a homework assignment in my Georgia Tech Coding Bootcamp. I used the express and Node.JS
+This was a project I completed as a homework assignment in my Georgia Tech Coding Bootcamp. I used express and Node.JS, along with starter code that was provided for me
 
 * [Node.JS](https://nodejs.org/en/)
 * [Express](https://expressjs.com/)

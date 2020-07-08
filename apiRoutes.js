@@ -4,6 +4,7 @@ const path = require("path");
 const fs = require("fs");
 
 module.exports = function (app) {
+    // get route 
   app.get("/api/notes", (req, res) => {
     fs.readFile("./db/db.json", "utf8", (err, data) => {
       if (err) {
@@ -13,6 +14,7 @@ module.exports = function (app) {
       res.json(arrayOfNotes);
     });
   });
+  // post route 
   app.post("/api/notes", (req, res) => {
     fs.readFile("./db/db.json", "utf8", (err, data) => {
       const arrayOfNotes = JSON.parse(data);
@@ -26,6 +28,7 @@ module.exports = function (app) {
       });
     });
   });
+  //delete route 
   app.delete("/api/notes/:id", (req, res) => {
     fs.readFile("./db/db.json", "utf8", (err, data) => {
       if (err) {
@@ -33,7 +36,7 @@ module.exports = function (app) {
       }
       const arrayOfNotes = JSON.parse(data);
       const deleteNotes = arrayOfNotes.filter(
-        (user) => user.id != req.params.id
+        (note) => note.id != req.params.id
       );
       fs.writeFile(
         "./db/db.json",
